@@ -2,7 +2,7 @@ import os
 
 statutes_folder = r"C:\Users\Raj Vikrant Brahma\Desktop\cases_folder\Object_statutes"
 
-# Step 1: Read the statute information from text files
+#Read the statute information from text files
 statutes_data = []
 
 # Iterate over the text files in the statutes folder
@@ -13,9 +13,8 @@ for file_name in os.listdir(statutes_folder):
         statute_description = file.read().strip()
         statutes_data.append({'title': statute_title, 'description': statute_description})
 
-# Step 2: Perform your task (e.g., retrieval or classification) using the statutes_data
+#Perform your task (e.g., retrieval or classification) using the statutes_data
 
-# Example: Print the statute information
 for statute in statutes_data:
     print(statute['title'])
     print(statute['description'])
